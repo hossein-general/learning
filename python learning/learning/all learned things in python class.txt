@@ -1,0 +1,152 @@
+# from os import system
+# from random import randint
+# from datetime import datetime
+# from sys import 
+# from sys import getrefcount
+
+# \n \t
+
+# +, -, *, /, //, %
+# =
+# ==, >=, <=, !=, <, >
+
+# int, float, string, bool
+
+# True, False
+
+# and, or, not, in
+
+# break, continue
+
+# region TEST
+# endregion
+
+# f"{var:<20}sum: 0" # f-satring
+
+# del
+
+# print("content", sep = "", end = "") # print(*data, sep="-")
+# type()
+# input("content")
+# int()
+# float()
+# str()
+# range() # range(0, 6) # range(6) # range(0, 6, 1)
+# max()
+# min()
+# sorted((num1, num2, num3), reverse = True)
+# system("cls")
+# randint(1, 3)
+# datetime.now()
+# list()
+# len()
+# getrefcount()
+# id()
+# enumerate()
+# sum()
+
+
+# if condition:
+#     pass
+# elif condigion:
+#     pass
+# else:
+#     pass
+
+# match var:
+#     case 1:
+#         pass
+#     case 2:
+#         pass
+#     case 3 | 4:
+#         pass
+#     case _:   # irrefutable patterns can be Wild card patterns or Capture patterns
+#         pass
+
+# while condition:
+#     pass
+# else:
+#     pass
+
+# for i in 0, 1, 2, 3, 4, 5: # for i in range(0, 6) # for i in range(6)
+#     pass
+# else:
+#     pass
+
+
+
+# Containers:
+# list, tuple, dict, set, frozenset, str
+
+
+# List:
+# creation/initialization:
+#     test = list()
+#     test = []
+#     score_list = [0] * 10
+# dunder methods:
+# .__len__() # len()
+# .__eq__()
+# methods:
+# .clear()
+# .remove()
+# .append()
+# .insert() # in this method it doesnt matter if you give an out of range index, it will insert in the last possitioin in taht case
+# .copy() # ways to copy a mutable variable without using it directly:
+            # new_data = data[:]
+            # new_data = data.copy()
+# .count()
+# .extend()
+# .index()
+# .pop()
+# .reverse()
+# .sort()
+
+
+
+
+# CONCEPTS1:
+# ========================================
+# immutable
+# mutable
+
+# data1 = 15
+# # data2 = 15
+# data2 = data1
+
+# data1 = ["meisam", "ilka", 31]
+# data2 = ["meisam", "ilka", 31]
+# # data2 = data1
+
+# ========================================
+# index
+
+# ========================================
+# list slicing:
+# new_data = data[1:4]
+# new_data = data[0:4]
+# new_data = data[:4]
+# new_data = data[1:]
+# new_data = data[:]
+# new_data = data[::2]
+
+# ========================================
+# iterable
+
+# ========================================
+# shallow copy
+
+# ========================================
+# single line for:
+
+# data = [i for i in range(1, 101)] 
+# data = [i for i in range(0, 101,2)] 
+# data = [i for i in range(0, 101) if i%2==0] 
+# data = [[i,"even"] if i%2==0 else [i,"odd"] for i in range(0, 101)] 
+
+# single line if-else:
+
+# print(num, "is even") if num%2==0 else print(num, "is odd")
+
+# ========================================
+

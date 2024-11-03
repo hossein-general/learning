@@ -1,0 +1,18 @@
+django base commands:
+django-admin startproject project_name	// creating a project
+py manage.py startapp app_name		// creating an application
+python manage.py makemigrations		// creating migrations
+python manage.py migrate		// pushing the migrations
+python manage.py ruserver		// running the server
+python manage.py shell			// going to the django shell
+
+
+(winpty) python manage.py createsuperuser
+
+
+Lazy relationships:
+	when refrencing using names as string
+	used for: recursive, relative or absolute realations
+		-recursive: table field relation to itself
+		-realative: using the refrence table name as string (can be usefull when the model is not defined yet)
+		-absolute: using the applicationa (module) name with the class name

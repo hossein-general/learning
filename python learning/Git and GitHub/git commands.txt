@@ -1,0 +1,72 @@
+some regular linux commands:
+$ touch <file name>	// creates a file named <file name>
+$ clear			// clears the screen
+$ ls			// shows all contained files and folders
+$ ls -a 		// just like normal ls but shows hidden files and folders
+$ pwd 			// shows your current directory path
+$ cd <path> 		// goes to the specified path
+
+
+$ git init	// initiallize local git repository // creates a .git folder in the current folder
+$ git add <file>	// add files(s) to index // puts them to the "Staging" area
+$ git status	// check status of working tree // to see what we have in staging area
+$ git commint	// commit changes in index // getting everything in the staging area and puts them in the local repository
+$ git push 	// push to remote repository // you have to first add remote service
+$ git pull	// pull latest from remote repository
+$ git clone	// clone repository into a new directory
+$ git --version	// getting the version of the git
+$ git config --global user.name 'Hossein Ramezani' // to set the user.name in the config file (as much as i know, this is only a text value that shows who did the commit, it can be your real name or any other text)
+$ git config --global user.email 'wave1221ram@gmail.com' // to set the user.email in the config file
+$ git config user.name 		// shows the current user.name value
+$ git config user.email 	// shows the current user.name value 
+$ git rm --cached <file> // to remove files from index of Staged
+
+Tricks:
+$ git add *.html	// stages all files with .html 
+$ git add -A		// stages all files and folders (new, modified, deleted)
+$ git add .   		// stages everything recursively, this will include all files and folders recursively (even dot files), but not the ignored files. this command will not add (stage) Deleted files!
+$ git add -u		// stages everything that is modified or deleted (But Not newly added files)
+$ git add * 		// stages everything recursively, in this one the asterisk will act as a wild card and executed by the shell and returns a list of all items, Except filees starting with dot (.)! also it will return an error if there is a non dot file that is included in gitignore (as if you try to add that ignored file manually)
+$ git commit -m 'applying some fixes' // if the commit command is called solely you will be directed to a file editting terminal in which you should first enter insert mode by pressing "i" and then entering some information about your commit, and after that you should press elscape to exit insert mode and enter :wq to complete the commit
+
+
+$ git branch login	// creates a branch called "login"
+$ git checkout login	// going to a branch named "login"
+$ git merge login	// merging a branch (this command should be runngin from the master branch (or a lower level branch imo)) // doing it this way will redirect you to another terminal that wants you to enter your reason of merging (agin use the :wq to complete the merge)
+
+
+$ git remote // shows remotes
+$ git remote add origin https://github.com/hossein-general/firstapp.sample.git // i think this adds 
+$ git push -u origin master // i think "origin" is the remote name and "master" is the branch
+$ git clone https://github.com/hossein-gene // to download a git project and put it in the current directory
+
+
+Dont forget to:
+- create README.md
+- create .gitignore file (there is no file extension)
+
+
+Tips on writing:
+.gitignore
+	to comment lines you can use sharp (#) to comment
+
+README.md
+	to add title use sharp before the line containing title to make it the title (im not sure about it)
+
+	
+------------------------------------------
+how to pull:
+*pull is a combination of fetch and merge
+$ git fetch origin
+$ git status
+$ git log origin/master
+$ git diff origin/master
+$ git merge origin/master
+$ git status
+
+or use:
+$ git pull origin
+
+
+
+

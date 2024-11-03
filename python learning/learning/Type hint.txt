@@ -1,0 +1,6 @@
+type hint (type annotation):
+a special syntax that allow declaring the type of a variable
+
+forward declaration (forward refrences):
+if the class is not defined yet, you can put the type as a string
+"This doesn't affect how your IDE sees the declaration; strings are looked up once the whole module is loaded, and are resolved as a valid Python expression in the current context"

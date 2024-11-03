@@ -1,0 +1,11 @@
+General Knowledge:
+Markdown vs Markup:
+	Markup: Markup is a generic term for a language that describes a document's formatting
+	Markdown: Its a lightweight markup language for creating formatted text using a plain-text editor
+
+DSL vs GPL:
+	DSL: Domain-Specified Language
+	GPL: General Purpose Language
+
+DBML: Database Markup Language (used by dbdiagram)
+

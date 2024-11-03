@@ -1,0 +1,51 @@
+Python Naming Conventions:
+
+General
+	Avoid names that are too general or wordy. Maintain a good balance between the two.
+	Bad: user_list, dict_to_store_defns_of_a_word, swapNums, moveInts.
+	Good: user_info, word_definitions, swap_numbers, move_integers.
+	Avoid naming things like “X”, “Y” or “Z”. Capitalize all letters of an abbreviation when using camelcase.
+	Avoid names starting with digits. Combination of lowercase letters (a to z) or uppercase letters (A to Z) or digits (0 to 9) or an underscore (_) can be used.
+
+Name a Package in python
+	It is important to use only lowercase while naming a package in python.
+	Use an underscore to join multiple words.
+	However, it is preferable to keep a short name. (Stick into one-word name)
+
+Module name
+	Use lowercase for module names.
+	Use an underscore to join multiple words to generate a meaningful module name.
+	Stick to 1-word module names.
+
+Class name in Python
+	Class name in python should follow naming scheme called CapWords convention.
+	Python has its built-in classes, however are typically lowercase.
+	Exception classes should always end in “Error”.
+
+Global Variables
+	Global variables should be in lowercase
+	Use an underscore to join words in a global variable.
+
+Good Instance variable name
+	Instance variable names should be in lowercase.
+	Use an underscore to join multiple words in an instance variable.
+	Non-public instance variable name should begin with a single underscore.
+	Use two consecutive underscores at the beginning of an instance variable.
+
+Method name in Python
+	Use only lowercase in method names.
+	An underscore should separate words in a method name.
+	Non-public method name should begin with a single underscore.
+	Use two consecutive underscores at the beginning of a method name, if it needs to be mangled.
+
+Method Arguments
+	Every instance method should have ‘self’ as its first argument.
+	Class methods should have their first argument named ‘cls’.
+
+Functions
+	Function names should be in lower case.
+	Use an underscore to join words in function name.
+
+Constants in Python
+	Only use upper case for constant names.
+	Use an underscore as a separator to join multiple words to form a long constant name.

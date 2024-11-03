@@ -1,0 +1,19 @@
+method overloading
+polymorphism
+expression vs statement
+overhead in programming
+ctrl+shif+E ---> view: togle word wrap: to make the text in vscode be wraped when reaching the right side of the editing tab
+research on regex
+research on encoding
+research on array
+overwrite (when defining a function or variable a second time)
+star-args in python (*test)
+keyword-argsin python (**test)
+autodockstring
+enclosing (functions within functions)
+
+
+
+
+
+

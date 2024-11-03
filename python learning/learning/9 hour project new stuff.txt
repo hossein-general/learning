@@ -1,0 +1,4 @@
+New commands learned from the 9 hour project:
+quit() 	# Quits the program
+randint()	# The end number is included in range
+randrange()	# The end number is not included in range (just like range() function)

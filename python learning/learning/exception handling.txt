@@ -1,0 +1,105 @@
+exeption handling tips, tricks and information:
+
+try: # trying this block of code first
+	pass
+# this kind of exceptions chained togather are like if-elif's. it will be entering the first except that matches the error type
+except ValueError: # if an exeption occures, it will check exceptions
+	pass
+except TypeError as err: # if we use "as variable" it will store that exception within that variable
+	print(type(err)) # will print "TypeError"
+	print(err) # will print the description for that error
+except (ZeroDivisionError, IndexError) as err: # its possible to use multiple exceptions seperated with cammas in one except
+	pass
+except BaseException as err: # BaseException is covering all other types of exceptions (exceptions have a hirarchy)
+	pass
+except: # default exception: this one is kind of same as BaseException, this one means any exception, its to make sure nothing unexpected is happening. by using exception, its not possible to use "as variable" to store data about the exception
+	pass
+else: # this block of code will be excecuted if there where no exceptions
+	pass
+finally: # "finally" will always execute, either there was an exception or not! and it always happens at the end. 
+	pass # its usually used for closing files 
+
+
+# exceptions are Types. they can hold values, and the value could be a string or a tuple of several items of information (e.g., an error code and a string explaining the code)
+data = ValueError("Hi Meisam")
+
+# and can be raised later:
+raise data
+
+# at this point we will get an error of type ValuerError with description of "Hi Meisam"
+
+
+# by pressing Ctrl + "z" in input, an exeption raises
+
+
+# Custom exceptions should be defined under the Exception subclass, which is is the base class of all the non-fatal exceptionsis the base class of all the non-fatal exceptions
+# Exceptions which are not subclasses of Exception are not typically handled, because they are used to indicate that the program should terminate.
+# Warning exceptions CAN be not stopping the program if we config them
+# We can use Warnings to print warnings in our programs
+Builtin Exceptions Hierarchy: # This one is non necessary but its good to take a look at it
+BaseException
+	-BaseExceptionGroup
+	-GeneratorExit
+	-KeyboardInterrupt
+	-SystemExit
+	-Exception
+		-ArithemticError
+			-FloatingPointError
+			-OverflowError
+			-ZeroDivisionError
+		-AssertionError
+		-AttributeError
+		-BufferError
+		-EOFError
+		-ExceptionGroup [BaseExceptionGroup]
+		-ImportError
+			-ModuleNotFoundError
+		-LookupError
+			-IndexError
+			-KeyError
+		-MemoryError
+		-NameError
+			-UnboundLocalError
+		-OSError
+			-BlockingIOError
+			-ChildProcessError
+			-ConnectionError
+				-BrokenPipeError
+				-ConnectionAbortedError
+				-ConnectionRefusedError
+				-ConnectionResetError
+			-FileExistsError
+			-FileNotFoundError
+			-InterruptedError
+			-IsADirectoryError
+			-NotADirectoryError
+			-PermissionError
+			-ProcessLookupError
+			-TimeouitError
+		-ReferenceError
+		-RuntimeError
+			-NotImplementedError
+			-RecursionError
+		-StopAsnIteration
+		-StopIteration
+		-SyntaxError
+			-IndentationError
+				-TabError
+		-SystemError
+		-TypeError
+		-ValueError
+			-UnicodeError
+				-UnicodeDecodeError
+				-UnicodeEncodeError
+				-UnicodeTranslateError
+		-Warning
+			-BytesWarning
+			-DeprecationWarning
+			-EncodingWarning
+			-futureWarning
+			-ImportWarning
+			-PendingDeprecationWarning
+			-ResourceWarning
+			-SyntaxWarning
+			-UnicodeWarning
+			-UserWarning

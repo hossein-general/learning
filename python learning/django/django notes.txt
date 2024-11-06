@@ -1,6 +1,6 @@
 django base commands:
 django-admin startproject project_name	// creating a project
-py manage.py startapp app_name		// creating an application
+python manage.py startapp app_name	// creating an application
 python manage.py makemigrations		// creating migrations
 python manage.py migrate		// pushing the migrations
 python manage.py ruserver		// running the server
@@ -16,3 +16,91 @@ Lazy relationships:
 		-recursive: table field relation to itself
 		-realative: using the refrence table name as string (can be usefull when the model is not defined yet)
 		-absolute: using the applicationa (module) name with the class name
+
+
+
+
+model = Models()
+model.save()   // saving the model instance to database
+
+Models.objects <...>
+.last()
+.first()
+.create()   // it also returns the created object
+.all()
+.get()     //will raise an error in case of no data match or duplicate
+.filter()
+
+// **deleting
+Models.objects.last().delete()
+
+// filterig data
+Models.objects <...>
+.filter(att = value)
+.filter(attr__startsswith = value)   // using lookup fields
+.filter(Q( title__icontain = '2') | Q(title__ixontain = '3')
+
+// using method on returned resault of methods like filter, all, etc.
+.filter(att = value). <...>  // its an example, i can use all(). or other thing
+.reverse()     // reverses the resault
+.order_by('-id')      // order by id, but reversed
+.query       // the sql query fo that query
+.update(author__username = 'user2')
+
+// lookup fields 
+__contains
+__icontains 
+__exact
+__in     // could use a query set or a list of objects
+__‌attributename   // using an attribute name as a lookupfield
+// e.g. .filter(author__username__in = [ 'user1', 'user2'  ]
+__startswith
+
+
+// setting a value for a field (for example for manay to many relations)
+book.author.add(user)
+.set()
+
+
+
+from django.contrib.auth import get_user_model
+User = get_user_model()
+
+User.objects <...>
+.create    // without parentheses 
+.create_user()   // it does some extra functions like password hashing 
+
+//adding other columns of table to the admin dashboards table display list: (in admin module)
+claas MyModelAdmin(admin.ModelAdmin):
+ list_display = {col1, col2}
+
+admin.site.register(MyModel, MyModelAdmin)
+
+// or adding decorator for the model in admin module:
+@admin.register.MyModelAdmin
+class MyModel(admin.ModelAdmin):
+ ...
+
+// django commands
+python manage.py <...>
+ changepassword admin       // changing password
+shell      // django shell
+
+// importing models in django shell
+from django.db.models import Q
+from django.contrib.auth.models import User    // default User model
+
+from django.contrib.auth import get_user_model
+User = get_user_model()    // get the customized user model
+
+from django.http import JsonResponse
+
+// responses
+return JsonResponse({"title" :  "test 1")
+return render(request, index.html)
+return HttpResponse('test')
+
+
+
+// odel fields
+models.ManyToManyField(User, realated_name = 'book_set')

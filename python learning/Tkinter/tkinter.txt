@@ -1,0 +1,53 @@
+Tk()
+
+// Widgets:
+Label(root, text='GeeksForGeeks.org!')
+button = tk.Button(r, text='Stop', width=25, command=r.destroy)
+Entry(master)
+Radiobutton(root, text='MIT', variable=v, value=2)
+Lb = Listbox(top)
+
+
+
+
+Lb.insert(1, 'Python')
+
+
+
+
+scrollbar = Scrollbar(root)
+scrollbar.pack(side=RIGHT, fill=Y)
+mylist = Listbox(root, yscrollcommand=scrollbar.set)
+
+for line in range(100):
+    mylist.insert(END, 'This is line number' + str(line))
+    
+mylist.pack(side=LEFT, fill=BOTH)
+scrollbar.config(command=mylist.yview)
+
+
+
+// Positioning:
+.grid(row=0, column=1)
+.pack()
+.pack(padx=40, pady=40)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

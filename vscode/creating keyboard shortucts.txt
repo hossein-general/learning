@@ -1,0 +1,10 @@
+keyboard shortcut for creating new file in vscode file explorer:
+// Opening the keybindings.json (press ctrl + shift + p, and type "open keyboard shortcuts (.json))
+// isert the following text:
+
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+    }
+
+

@@ -1,0 +1,28 @@
+sentinel values, are kind of an exception value for a certain variable type (my personal idea)
+
+A sentinel value is a special value you can set a variable to. It's special, because 
+it's different from all "legal" values that could be in that variable. So it's used as a signal.
+
+For example:
+
+If you have a variable x, holding an int... except when the number is undefined, maybe 
+because the user never supplied it. Then you can set x to None. In that case, None is 
+being used as a sentinel value.
+
+but there is a 'but'!
+
+but if the legal values inclue None values, then None couldnt be a sentinel value
+and as default values could be legal values in many cases, we can create our own object that represents a sentinel value
+
+> Instead, side step this completely, by creating a unique object. Just do this:
+MISSING = object()
+val = mydict.get(key, MISSING)
+
+# later...
+if val is MISSING:
+   # ...
+
+
+
+check the full explanation:
+https://powerfulpython.com/blog/the-object-sentinel-trick/#:~:text=A%20sentinel%20value%20is%20a,it's%20used%20as%20a%20signal.

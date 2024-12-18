@@ -116,6 +116,17 @@ string concatenation (+): اتصال استرینگ ها به هم یا به ا�
 
 source code
 
+--------------------------------
+some lost notes (due to unexpected system shutdown)
+--------------------------------
+
+[from page 47 of the source book] ...
+
+
+
+
+
+
 
 
 

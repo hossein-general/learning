@@ -1,0 +1,114 @@
+system.out.print("test")
+
+primitive data types:
+	integer	
+		char 
+		byte
+		short
+		int
+		long
+	floating point
+		float
+		double
+	boolean
+
+literals
+
+final dataType IDENTIFIER = value;
+
+dataType identifier1, identifier2, ..., identifierN;
+
+int x = 10, y = 12;
+
+operators:
+	Arithmetic: -- ++ % + - / *
+	
+short circuite evaluation (for && and || usaully)
+
+// in expressions, types cast to the larger type by each operator
+
+//type casting:
+y = (float) x;
+
+
+
+متغیر ها:
+	متغیر های نوع داده اولیه
+	متغیر های مرجع
+
+// first program:
+
+public class Test {
+	public static void main(String[] args) {
+		// statements
+	}
+}
+
+
+System.out.print();
+System.out.println();
+System.out.printf();
+
+طول میدان مقادیر اعشاری:
+%w.df (%5.2f)
+
+
+import java.util.Scanner;
+import java.util.*;
+static Scanner console = new Scanner (System.in);
+console.next(); // کلمه بعدی
+console.nextInt(); // عدد صحیح
+console.nextLine(); // خط بعدی
+
+
+import java.lang; // (automate)
+String و Math
+
+modifier(s) returnType methodName (formal parameter list) {
+	statement(s)
+}
+
+// modifiers: static, public, private
+// returnType: double, void, int, String, ...
+// methodName: the name of the method
+
+public static void report (int p1, int p2) {
+	...
+}
+
+for (initialization; condition; step) {
+	...
+}
+
+
+while (condition) {
+	...
+}
+
+
+do {
+	...
+} while (condition);
+
+
+if (condition) {
+	...
+} else if (condition) {
+	...
+} else {
+	...
+}
+
+break;
+
+switch (expression) {
+	case x: 
+		break;
+	case y: 
+		break;
+	case z: 
+		break;
+	default:
+}
+
+کیس های پشت سر هم بدون برک تبدیل به «یا» می شوند

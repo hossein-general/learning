@@ -1,0 +1,58 @@
+img = cv2.imread("path", cv2.IMREAD_COLOR) // color settings included
+	IMREAD_COLOR
+	IMREAD_GRAYSCALE
+
+img.size
+	.size
+	.shape
+
+img[0, 0]
+
+img * 2		
+
+cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+	COLOR_BGR2GRAY
+	COLOR_BGR2RGB
+
+cv2.imshow("label", img)
+
+cv2.imwrite("path_to_save", img)
+
+
+------------------------------------------------------------------
+
+# RESIZE
+cv2.resize(img, (400, 800))
+cv2.resize(img, (0, 0), fx=2, fy=1)
+
+
+# CROP
+height, width = img.shape[0], img.shape[1]
+img = img[int(height/3) : , 50 : -50]
+
+
+# ROTATE
+cv2.rotate(img, cv2.ROTATE_180)
+
+M = cv2.getRotationMatrix2D(center=(width/2, height/2), angle=150, scale=1)
+
+img = cv2.warpAffine(img, M, (width, height))
+
+-------------------
+# some data are missing due to unexpected system crash
+-------------------
+------------------------------------------------------------------
+
+stream = cv2.VideoCapture(0)
+
+if not stream.isOpened()
+
+
+
+
+
+
+
+
+
+

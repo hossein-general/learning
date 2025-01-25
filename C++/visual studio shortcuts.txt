@@ -1,0 +1,29 @@
+visual studio 2022 shortcuts:
+
+Navigation:
+general navigation				CTRL + TAB
+navigate to Solution Explorer			CTRL + ALT + L
+select current document in Solution Explorer	CTRL + [ + S
+navigate between active files			CTRL + TAB
+
+Selection:
+selecting the current word			CTRL + W
+find						CTRL + F
+find and replace				CTRL + H
+select all					CTRL + A
+copy						CTRL + C
+paste						CTRL + V
+
+
+Editing:
+duplicate line					CTRL + D
+new file					CTRL + N
+enter line on top and move to it		CTRL + ENTER
+enter line under and move to it			CTRL + SHIFT + ENTER
+open Output window				CTRL + ALT + O
+open Error List 				CTRL + \ + E
+commenting out					CTRL + / 
+commenting out					CTRL + K, CTRL + C
+
+
+

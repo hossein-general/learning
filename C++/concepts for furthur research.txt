@@ -1,0 +1,2 @@
+concepts for furthur research:
+- How the compiler and operating system work to assign memory to objects

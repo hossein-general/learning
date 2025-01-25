@@ -1,0 +1,5 @@
+Obsidian noting app shortcuts:
+Switch to Reading/Editting mode		CTRL + E
+close tab				CTRL + W
+create new note				CTRL + N
+go to a file or create new one		CTRL + O

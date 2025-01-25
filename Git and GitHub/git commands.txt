@@ -68,5 +68,10 @@ or use:
 $ git pull origin
 
 
+------------------------------------------
+undo add:
+$ git reset <file name>
 
+to reset all:
+$ git reset
 

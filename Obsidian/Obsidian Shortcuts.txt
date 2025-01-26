@@ -3,3 +3,73 @@ Switch to Reading/Editting mode		CTRL + E
 close tab				CTRL + W
 create new note				CTRL + N
 go to a file or create new one		CTRL + O
+make text bold         CTRL + B
+line break            SHIFT + ENTER
+
+
+
+
+
+
+
+Markdown formatting syntax:
+paragraph      blank space separation
+line break     <br>
+line break     2 spaces followed by enter
+heading        up to 6 #
+
+bold       **text**   __text__
+italic      *text*    _text_
+strikethrough    ~~text~~
+highlight       ==text==
+bold and italic    ***text***   ___text___
+escape character    \
+
+internal link     [[text]]
+markdown link     [text](link)
+external link     [text](link)
+Escape blank spaces in links     %20  or wrap with <>
+external image     ![text](link)
+image ratio       ![text|640x480](link)
+quote          > text
+callout       [!info] ain quote
+
+un ordered list    - text   * text   + text
+ordered list      1. text   2. text
+task list        - [x] text     - [ ] text
+nested list     indent
+comments      %%text%%
+
+horizontal rule:
+***
+****
+* * *
+---
+----
+- - -
+___
+____
+_ _ _
+
+
+inline code    `text`
+code block     ```text```   or indenting (4 space, 1 tab)
+code syntax highlight    ```js code```
+
+footnotes:
+This is a simple footnote[^1].
+
+[^1]: This is the referenced text.
+[^2]: Add 2 spaces at the start of each new line.
+  This lets you write footnotes that span multiple lines.
+[^note]: Named footnotes still appear as numbers, but can make it easier to identify and link references. 
+
+You can also use inline footnotes. ^[This is an inline footnote.]
+
+
+
+
+
+
+
+

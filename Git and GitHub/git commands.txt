@@ -75,3 +75,8 @@ $ git reset <file name>
 to reset all:
 $ git reset
 
+removing directory from git repository (not localy):
+git rm -r --cached myFolder
+
+initializing git with files in other directory. You can initialize a new separate repository with:
+git init --separate-git-dir /path/to/repo.git

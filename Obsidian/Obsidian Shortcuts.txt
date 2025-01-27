@@ -2,13 +2,12 @@ Obsidian noting app shortcuts:
 Switch to Reading/Editting mode		CTRL + E
 close tab				CTRL + W
 create new note				CTRL + N
-go to a file or create new one		CTRL + O
-make text bold         CTRL + B
-line break            SHIFT + ENTER
-
-
-
-
+quick switch 				CTRL + O
+make text bold         			CTRL + B
+line break            			SHIFT + ENTER
+create note in new pane			CTRL + SHIFT + N
+make text italic			CTRL + I
+command palette				CTRL + P
 
 
 
@@ -39,6 +38,10 @@ ordered list      1. text   2. text
 task list        - [x] text     - [ ] text
 nested list     indent
 comments      %%text%%
+1 blank space		&nbsp;
+2 blank space		&nnsp;
+4 blank space		&nmsp;
+
 
 horizontal rule:
 ***

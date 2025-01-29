@@ -10,10 +10,8 @@ Selection:
 selecting the current word			CTRL + W
 find						CTRL + F
 find and replace				CTRL + H
-select all					CTRL + A
-copy						CTRL + C
-paste						CTRL + V
-
+expand selection 				ALT + SHIFT + =
+contract selection 				ALT + SHIFT + -
 
 Editing:
 duplicate line					CTRL + D
@@ -24,6 +22,7 @@ open Output window				CTRL + ALT + O
 open Error List 				CTRL + \ + E
 commenting out					CTRL + / 
 commenting out					CTRL + K, CTRL + C
+delete line					CTRL + SHIFT + L
 
 
 

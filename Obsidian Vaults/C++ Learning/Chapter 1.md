@@ -15,3 +15,6 @@
 
 ![[Keywords and naming Identifiers]]
 
+![[Uninitialized - Undefined]]
+
+![[White Space & Formatting]]

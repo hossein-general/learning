@@ -19,3 +19,6 @@ modules and class:
 ![[Path Objects in Pathlib.png]]
 
 ==Cmap (Color maps)==: is a very useful tool for data visualization (in python colormaps)
+
+==Pascal Visual Object Classes (VOC) data set==: is **a renowned benchmark for object detection, segmentation, and classification in computer vision**. It includes comprehensive annotations like bounding boxes, class labels, and segmentation masks across 20 different object categories.
+

@@ -8,3 +8,7 @@
 >>> print y       # a statement (in 2.x)
 2
 ```
+
+==Function Signature==: A function signature **consists of the function prototype**. It specifies the general information about a function like the name, scope and parameters.
+
+
